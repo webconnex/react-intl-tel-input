@@ -205,6 +205,9 @@ class IntlTelInput extends Component {
 
   setTelRef = ref => {
     this.tel = ref
+    if (this.props.refCallback) {
+      this.props.refCallback(ref)
+    }
   }
 
   // select the given flag, update the placeholder and the active list item
@@ -1322,6 +1325,7 @@ class IntlTelInput extends Component {
 }
 
 IntlTelInput.propTypes = {
+  refCallback: PropTypes.func,
   /** Container CSS class name. */
   containerClassName: PropTypes.string,
   /** Text input CSS class name. */
