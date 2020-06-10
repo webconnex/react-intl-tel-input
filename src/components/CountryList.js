@@ -114,7 +114,7 @@ export default class CountryList extends Component {
 
     const preferredOptions = this.appendListItem(preferredCountries, true)
     const allOptions = this.appendListItem(countries)
-    const divider = <div className="divider" />
+    const divider = <li className="divider" />
 
     return (
       <ul
