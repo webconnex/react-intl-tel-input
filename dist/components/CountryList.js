@@ -143,7 +143,7 @@ var CountryList = function (_Component) {
       var preferredOptions = this.appendListItem(preferredCountries, true);
       var allOptions = this.appendListItem(countries);
 
-      var divider = _react.default.createElement("div", {
+      var divider = _react.default.createElement("li", {
         className: "divider"
       });
 
