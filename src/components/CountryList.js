@@ -65,7 +65,7 @@ export default class CountryList extends Component {
     const preferredCountriesCount = this.props.preferredCountries.length
 
     return countries.map((country, index) => {
-      const actualIndex = isPreferred ? index : index + preferredCountriesCount
+      const actualIndex = isPreferred ? index : index + preferredCountriesCount + 1
       const countryClassObj = {
         country: true,
         highlight: this.props.highlightedCountry === actualIndex,
