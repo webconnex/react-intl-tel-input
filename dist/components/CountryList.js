@@ -75,7 +75,7 @@ var CountryList = function (_Component) {
       var isPreferred = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       var preferredCountriesCount = _this.props.preferredCountries.length;
       return countries.map(function (country, index) {
-        var actualIndex = isPreferred ? index : index + preferredCountriesCount;
+        var actualIndex = isPreferred ? index : index + preferredCountriesCount + 1;
         var countryClassObj = {
           country: true,
           highlight: _this.props.highlightedCountry === actualIndex,
